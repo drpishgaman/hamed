@@ -6,8 +6,7 @@ function login() {
   const correctPassword = "1234";
 
   if (username === correctUsername && password === correctPassword) {
-    alert("ورود موفقیت‌آمیز بود!");
-    // در آینده: انتقال به صفحه اصلی
+    window.location.href = "home.html"; // انتقال به صفحه اصلی
   } else {
     document.getElementById("error").textContent = "نام کاربری یا رمز عبور اشتباه است.";
   }
